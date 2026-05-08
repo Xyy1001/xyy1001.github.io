@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Reading List - Xu Yingyu" />
+    <meta name="author" content="Xu Yingyu" />
+    <title>Reading List | Xu Yingyu</title>
+
+    <!-- Icon -->
+    <link id="site-favicon" rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <script>
+        // Keep favicon working for nested pages
+        (function () {
+            var cleanPath = window.location.pathname.replace(/\/+$/, '');
+            var depth = cleanPath.split('/').filter(Boolean).length;
+            var prefix = depth > 0 ? '../'.repeat(depth - 1) : '';
+            var iconPath = prefix + 'static/assets/favicon.ico';
+            var iconEl = document.getElementById('site-favicon');
+            if (iconEl) {
+                iconEl.href = iconPath;
+            }
+        })();
+    </script>
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatability -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container-fluid page-shell px-3 px-xl-4">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="index.html">Xu Yingyu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0" style="text-align: center;">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="index.html#page-top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="index.html#ReadingList">Reading List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid page-shell px-3 px-xl-4 mt-5">
+        <div class="row g-3 align-items-start justify-content-center">
+            <main class="col-lg-10" style="max-width: 900px;">
+                <!-- Reading List -->
+                <section id="ReadingList">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-book-half"></i>&nbsp;Recommended Reading</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="mb-4">📚 Browse my recommended books across different categories. You're also welcome to contribute your own recommendations by filling out the form below!</p>
+
+                            <div class="book-panel mb-4">
+                                <h5 class="mb-3">Add a Category (Optional)</h5>
+                                <div class="row g-2 align-items-center">
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="categoryInput"
+                                            placeholder="e.g. Machine Learning / Product / Philosophy" />
+                                    </div>
+                                    <div class="col-md-4 d-grid">
+                                        <button class="btn btn-outline-light" id="addCategoryBtn" type="button">Add
+                                            Category</button>
+                                    </div>
+                                </div>
+                                <div id="categoryChips" class="mt-3"></div>
+                            </div>
+
+                            <div class="book-panel mb-4">
+                                <h5 class="mb-3">Recommend a Book</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookCategorySelect">Category</label>
+                                        <select class="form-select" id="bookCategorySelect"></select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookTitleInput">Book Title</label>
+                                        <input type="text" class="form-control" id="bookTitleInput"
+                                            placeholder="Book title" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookAuthorInput">Author</label>
+                                        <input type="text" class="form-control" id="bookAuthorInput"
+                                            placeholder="Author (optional)" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookFileInput">Upload Original File</label>
+                                        <input type="file" class="form-control" id="bookFileInput"
+                                            accept=".pdf,.epub,.mobi,.txt,.doc,.docx" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="bookNoteInput">Why do you recommend it?</label>
+                                        <textarea class="form-control" id="bookNoteInput" rows="3"
+                                            placeholder="Share why this book is worth reading..."></textarea>
+                                    </div>
+                                    <div class="col-12 d-grid d-md-flex justify-content-md-end">
+                                        <button class="btn btn-light px-4" id="addBookBtn" type="button">Submit Recommendation</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="book-panel">
+                                <h5 class="mb-3">Books List</h5>
+                                <div id="bookListRecommended Books class="book-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container-fluid page-shell px-3 px-xl-4">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2">© 2026 Xu Yingyu. All rights reserved.</div>
+                <a id="github-link" href="https://github.com/Xyy1001/Xyy1001.github.io">GitHub</a>
+                <span class="mx-1">&middot;</span>
+                <a id="return-top-link" href="index.html#page-top">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

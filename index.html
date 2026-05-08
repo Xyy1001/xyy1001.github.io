@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Xu Yingyu - Academic Profile" />
+    <meta name="author" content="Xu Yingyu" />
+    <title>Xu Yingyu | Academic Profile</title>
+
+    <!-- Icon -->
+    <link id="site-favicon" rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <script>
+        // Keep favicon working for nested pages (e.g. /contents/*.html)
+        (function () {
+            var cleanPath = window.location.pathname.replace(/\/+$/, '');
+            var depth = cleanPath.split('/').filter(Boolean).length;
+            var prefix = depth > 0 ? '../'.repeat(depth - 1) : '';
+            var iconPath = prefix + 'static/assets/favicon.ico';
+            var iconEl = document.getElementById('site-favicon');
+            if (iconEl) {
+                iconEl.href = iconPath;
+            }
+        })();
+    </script>
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatibility -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Markdown -->
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <!-- Mathematics -->
+    <script>
+        // See https://docs.mathjax.org/en/latest/index.html for more details.
+        MathJax = {
+            tex: {
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [             // start/end delimiter pairs for display math
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
+                formatError:               // function called when TeX syntax errors occur
+                    (jax, err) => jax.formatError(err)
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container-fluid page-shell px-3 px-xl-4">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Xu Yingyu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0" style="text-align: center;">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#page-top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#home">Research Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Project">Research & Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Publications">Submitted Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Leadership">Leadership & Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#ReadingList">Recommended Reading</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid page-shell px-3 px-xl-4">
+        <div class="row g-3 align-items-start">
+            <aside class="col-xl-3 col-lg-4 mb-3" id="sidebar">
+                <div class="card p-2 sticky-sidebar">
+                    <!-- Portrait photo -->
+                    <img class="profile-photo" src="static/assets/img/photo.png" alt="avatar">
+                    <div class="person-info text-center mb-2" style="margin-top: 0.8rem;">
+                        <h4 class="mb-1" style="color: var(--h-text-primary);">Xu Yingyu</h4>
+                        <div class="mb-2" style="color: var(--h-text-secondary);">许莹予</div>
+                        <div class="small" style="color: var(--h-text-muted);">
+                            <div style="left: auto;">Phone: (+86) 15914401167</div>
+                            <div style="left: auto;">Email: <a
+                                    href="mailto:xuyingyuy1001@gmail.com">xuyingyuy1001@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-xl-9 col-lg-8" id="main-content">
+                <!-- Research Background -->
+                <section id="home">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-person-badge-fill"></i>&nbsp;Research Background</h2>
+                        </header>
+                        <div class="main-body">
+                            <p>
+                                💻 Undergraduate researcher in Software Engineering with a minor in Business Administration
+                                at South China University of Technology, Guangzhou. Focused on machine learning,
+                                knowledge-intensive systems, and data-centric applications, with experience spanning financial time-series modeling,
+                                scientific idea generation systems, and computer vision.
+                            </p>
+                            <p>
+                                🔬 I pursue research that connects structured knowledge representations with machine
+                                learning, aiming to build transparent, rigorous systems for decision support and scientific
+                                reasoning. My recent work emphasizes multi-layer knowledge graphs, LLM-assisted expert agents, and
+                                data-driven modeling for complex domains.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section id="Education">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-mortarboard-fill"></i>&nbsp;Education</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="with-dot">
+                                🏛<strong>South China University of Technology</strong>, Guangzhou, China
+                                <span class="date-range">(Sep 2023 &ndash; Present)</span>
+                            </p>
+                            <p>
+                                B.Eng. in Software Engineering (Major) · Business Administration (Minor)<br>
+                                GPA: 3.61 / 4.00
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Submitted Work -->
+                <section id="Publications">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-journal-text"></i>&nbsp;Submitted Work</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="with-dot">
+                                📝 [C.1] Wenbo Li, Xu Yingyu, Yiteng Chen, Peihao Chen, Lingwei Dang, Qingyao Wu, Huiping
+                                Zhuang,
+                                "Reconstructing Scientific Thinking: A Multi-Level Cognitive Engine for
+                                Idea-to-Blueprint Generation,"
+                                submitted to the <strong>International Conference on Machine Learning (ICML)
+                                    2026</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research & Projects -->
+                <section id="Project">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-diagram-3-fill"></i>&nbsp;Research & Projects</h2>
+                        </header>
+                        <div class="main-body">
+                            <div class="project-card">
+                                <h5>📊 Optimizing ETF Allocation with ML (SRP) <span class="date-range">(Mar 2025 &ndash; 
+                                        Present)</span></h5>
+                                <p class="with-dot"><strong>Tools:</strong> Distributed database, LSTM, Transformer, GNN
+                                </p>
+                                <p>
+                                    💹 Modeled financial time-series with a hybrid Transformer+LSTM and a risk-correlation
+                                    GNN.
+                                    Reported 60% annualized return and 19% cumulative return in backtests on 26 ETFs.
+                                    Building an agent-based web system for strategy adjustment and drafting a research
+                                    paper.
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h5>🧠 Reconstructing Scientific Thinking (AI4S) <span class="date-range">(Oct 2025 &ndash; Jan
+                                        2026)</span></h5>
+                                <p class="with-dot"><strong>Tools:</strong> Multi-Layer KG, LLM-Based Expert Agents,
+                                    Cross-Layer Index Router</p>
+                                <p>
+                                    🔗 Developed a 3-layer knowledge graph with cross-layer links for traceable scientific
+                                    ideation.
+                                    Built an LLM-driven index router and expert agents. Employed a 4-slot cognitive
+                                    scaffold to
+                                    enforce coherent reasoning and achieved 75% expert preference. ✨ Expert + LLM
+                                    evaluation
+                                    showed systematic improvements across four cognitive dimensions.
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h5>🔍 Search Image by Image <span class="date-range">(Mar 2025 &ndash; May 2025)</span></h5>
+                                <p class="with-dot"><strong>Tools:</strong> ResNet50, Faiss</p>
+                                <p>
+                                    🖼️ Built a modular content-based image retrieval pipeline with three independent
+                                    stages.
+                                    Used ResNet50 for feature extraction and Faiss for indexing and retrieval, enabling
+                                    an
+                                    end-to-end workflow from batch processing to interactive visualization.
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h5>👤 Reproduce Face Detection with MTCNN <span class="date-range">(Oct 2025 &ndash; Nov
+                                        2025)</span></h5>
+                                <p class="with-dot"><strong>Tools:</strong> PyTorch, OpenCV, TensorBoard</p>
+                                <p>
+                                    🎯 Reproduced the 3-network MTCNN cascade for face detection and alignment, achieving
+                                    99.1% mean precision on challenging benchmarks.
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h5>🌐 Reproduce Neural Machine Translation with Seq2Seq <span class="date-range">(Oct 2025
+                                        &ndash; Nov 2025)</span></h5>
+                                <p class="with-dot"><strong>Tools:</strong> PyTorch, GRU, Attention, NLTK</p>
+                                <p>
+                                    📝 Implemented a Seq2Seq model with Bahdanau attention and optimized training to reach
+                                    BLEU 28.45.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section id="Skills">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-tools"></i>&nbsp;Skills</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="with-dot"><strong>Programming Languages:</strong> 🐍 Python, C, C++, ☕ Java, 🦀 Rust</p>
+                            <p class="with-dot"><strong>Data Science & ML:</strong> 🔥 PyTorch, TensorFlow</p>
+                            <p class="with-dot"><strong>Web Technologies:</strong> 🟢 Node.js, Vue</p>
+                            <p class="with-dot"><strong>Database Systems:</strong> 🗄️ MySQL, SQL Server, TiDB</p>
+                            <p class="with-dot"><strong>Research Tools:</strong> 📄 Overleaf, Origin, Zotero, 🤖 GPT, Prism,
+                                MATLAB</p>
+                            <p class="with-dot"><strong>Other Tools:</strong> Git, 🐧 Linux, CVAT, Qt, JavaScript</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leadership & Service -->
+                <section id="Leadership">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-people-fill"></i>&nbsp;Leadership & Service</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="with-dot">
+                                🎓 <strong>Class Representative,</strong> Software Engineering & Business Administration
+                                Dual-Degree Pilot Program,
+                                South China University of Technology <span class="date-range">(May 2024 &ndash; Dec
+                                    2025)</span>
+                            </p>
+                            <p class="with-dot">
+                                ✏️ <strong>Secretary Department Minister,</strong> SCUT IBM Club
+                                <span class="date-range">(May 2024 &ndash; May 2025)</span>
+                            </p>
+                            <p class="with-dot">
+                                🤝 <strong>Volunteer,</strong> Guangzhou Metro Star Volunteer Program <span
+                                    class="date-range">(Apr 2025)</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recommended Reading -->
+                <section id="ReadingList">
+                    <div class="content-wrap">
+                        <header>
+                            <h2><i class="bi bi-book-half"></i>&nbsp;Recommended Reading</h2>
+                        </header>
+                        <div class="main-body">
+                            <p class="mb-2">📚 Here are some books I recommend across various fields. Feel free to explore and share your own recommendations!</p>
+                            <p><a href="reading-list.html" style="color: var(--h-primary); text-decoration: underline;">View Full Reading List & Add Recommendations →</a></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container-fluid page-shell px-3 px-xl-4">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2">© 2026 Xu Yingyu. All rights reserved.</div>
+                <a id="github-link" href="https://github.com/Xyy1001/Xyy1001.github.io">GitHub</a>
+                <span class="mx-1">&middot;</span>
+                <a id="return-top-link" href="#page-top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
